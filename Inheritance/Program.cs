@@ -497,7 +497,7 @@ namespace FundamentalRules
     //        //}
 
     //        string name = null;
-            
+
     //        while(Q.Count != 0) 
     //        {
     //            name = name + " " + Q.Dequeue();
@@ -507,5 +507,58 @@ namespace FundamentalRules
     //        Console.ReadLine();
     //    }
     //}
+    #endregion
+    #region Exception and Assignment
+    //class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        try
+    //        {
+    //            int[] A = new int[2];
+    //            A[0] = 10;
+    //            A[1] = 15;
+    //            A[2] = 20;
+    //        }
+    //        catch (Exception E)
+    //        {
+    //            Console.WriteLine(E.Message);
+    //        }
+
+    //        //catch (FormatException FE)
+    //        //{
+    //        //    Console.WriteLine(FE.Message);
+    //        //}
+    //        //catch(DivideByZeroException DE)
+    //        //{
+    //        //    Console.WriteLine(DE.Message);
+    //        //}
+
+    //        //for (int i = 0; i < A.Length; i++)
+    //        //{
+    //        //    Console.WriteLine(A[i]);
+    //        //}
+    //        finally
+    //        {
+    //            Console.ReadLine();
+    //        }
+    //    }
+    //}
+    class Program
+    {
+        static void Main(string[] argc)
+        {
+            try
+            {
+                var result = Calculate.Divide(15, 0);
+                Console.WriteLine("Result is " + result);
+            }
+            catch(Exception E)
+            {
+                Console.WriteLine(E.Message);
+            }
+            Console.ReadLine();
+        }
+    }
     #endregion
 }
